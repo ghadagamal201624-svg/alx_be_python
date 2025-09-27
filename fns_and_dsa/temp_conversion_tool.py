@@ -10,9 +10,9 @@ def convert_to_fahrenheit(celsius):
     return fahrenheit
 def main():
     print ("Temperature Conversion Tool")
-temp_input = input("enter the temperature to convert:")
+temp_input = input("ُُEnter the temperature to convert:")
 temprature = float(temp_input)
-unit = input("is this in Celsius or Fahrenheit? (C/F):").strip().upper()
+unit = input("Is this tempreature in Celsius or Fahrenheit? (C/F):").strip().upper()
 if unit == "C":
     converted = convert_to_fahrenheit(temprature)
     print(f"{temprature}°C is {converted:.2f}°F")

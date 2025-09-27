@@ -12,7 +12,7 @@ def main():
     print ("Temperature Conversion Tool")
 temp_input = input("ُُEnter the temperature to convert:")
 temprature = float(temp_input)
-unit = input("Is this tempreature in Celsius or Fahrenheit? (C/F):").strip().upper()
+unit = input("Is this temperature in Celsius or Fahrenheit? (C/F):").strip().upper()
 if unit == "C":
     converted = convert_to_fahrenheit(temprature)
     print(f"{temprature}°C is {converted:.2f}°F")

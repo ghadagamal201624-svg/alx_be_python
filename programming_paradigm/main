@@ -8,9 +8,9 @@ def main():
         sys.exit(1)
     numerator = sys.argv[1]
     denominator = sys.argv[2]
-    result = safe_divide(numerator, denominator)
-    if isinstance(result, str) and result.startswith("Error:"):
-        print(result)
+    success, result = safe_divide(numerator, denominator)
+    if success:
+        print(f"The result of the division is {result}")
     else:
         print(f"The result of the division is {result}")
 if __name__ == "__main__":
